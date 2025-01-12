@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-5vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(7vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-10vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(28vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+body { /* general page consistencies */
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(64, 64, 64);
+    overflow: hidden;
+    background-image: url(assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 { /* title appearance */
+    font-size: 5vw;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link { /* modify link appearance */
+    color: white;
+    font-size: 1.3vw;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 2vw;
+}
+
+.selfie { /* picture appearance */
+    border: solid 0.5vh rgb(10,31,67);
+    border-radius: 100rem;
+    width: 15vw;
+    height: auto;
+    margin-top: 12vh;
+
+    transition: transform 0.5s ease;
+}
+
+.selfie:hover {
+    border: solid 0.5vh hotpink;
+}
+
+.navBar { /* navigation links */
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 111rem;
+    margin-top: 15.4vh;
+    margin-left: 2vw;
+    width: 15.02vw;
+    height: 30.06vh;
+    background-color: transparent;
+    z-index: -1; 
+    transition: transform 0.2s ease;
+}
+
+.icon { /* center icon div */
+    margin-left: 40.5vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 18vw;
+
+
+    /* CSS ANIMATION */
+    animation-name: slideInBottom;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+.txtBox {
+    background-color: rgba(34,71,116,255);
+    border: solid 0.5vh rgb(10,31,67);
+    box-shadow: 0.7vw 1.5vh rgba(34,71,116,255);
+    margin-bottom: 5vh;
+    margin-left: 35vw;
+    margin-right: 35vw;
+    margin-top: 3vw;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+#desc {
+    color: white;
+    font-size: 2vh;
+}
+
+.navBar a:hover {
+    color: hotpink;
+    background-color: black;
+    border-radius: 3rem;
+    transition: transform 0.2s ease;
+}
+
+#name:hover {
+    color: hotpink;
+}
+
+#closeButton {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-left: 1.8vw;
+    font-size: 6vh;
+}
+
+#closeButton:hover {
+    color: red;
+    border-radius: 3rem;
+    transform: translateY(0);
+}
+
+.borderTop {
+    top: 0;
+    left: 0;
+    margin-top: -18vh;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    display: flex;
+}
+
+.borderBot {
+    bottom: 0;
+    left: 0;
+    margin-bottom: -18vh;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+}
+
+.gallery {
+    border: 0.3vw solid rgba(34,71,116,255);
+    float: left;
+    width: 10%;
+    margin: 3px;
+    transition: transform 0.2s ease;
+}
+
+.gallery:hover {
+    border: 0.3vw solid hotpink;
+    transform: translateY(-15px);
+}
+
+.gallery img {
+    width: 100%;
+    display: flex;
+}
+
+.info {
+    text-align: center;
+    color: white;
+    font-size: 60%;
+    background-color: rgb(10,31,67);
+}
+
+.infoTitle {
+    text-align: center;
+    color: white;
+    font-size: 75%;
+    background-color: rgb(10,31,67);
+}
+
+.flag {
+    margin-top: 50px;
+    width: 150px;
+    height: 75px;
+    border-radius: 1rem;
+    border: solid 0.3rem black;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+#social {
+    /* CSS ANIMATION */
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+#america {
+    /* CSS ANIMATION */
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+#canada {
+    /* CSS ANIMATION */
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+#pakistan {
+    /* CSS ANIMATION */
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+#america:hover {
+    border-color: darkblue;
+    transform: translateY(-15px);
+}
+
+
+#canada:hover {
+    border-color: red;
+    transform: translateY(-15px);
+}
+
+#pakistan:hover {
+    border-color: green;
+    transform: translateY(-15px);
+}
+
+#social:hover {
+    border-color: skyblue;
+    transform: translateY(-15px);
+}
+
+.contentDesc {
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 3rem;
+}
+
+.flagContainer {
+    display:flex;
+    justify-content: center;
+}
+
+#travel {
+    margin-left: 22.8vw;
+}

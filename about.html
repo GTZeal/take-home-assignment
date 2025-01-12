@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+        <title>Zeeshan's Card</title>
+    </head>
+    
+    <body>
+        <div class="borderTop">
+            <h1>-</h1>
+        </div>
+
+        <div class="icon">
+            <img class="selfie" src="assets/selfie.jpg" alt="Picture of Me" onclick="openNav()">
+
+            <nav class="navBar">
+                <a href="javascript:void(0)" id="closeButton" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="link">HOME</a>
+                <a href="hobbies.html" class="link">HOBBIES</a>
+                <a href="about.html" class="link">ABOUT</a>
+            </nav>
+        </div>
+        
+        <div class="flagContainer">
+            <img onclick="pkContent()" class="flag" id="pakistan" src="assets/pkFlag.png" alt="">
+            <img onclick="cndContent()" class="flag" id="canada" src="assets/cndFlag.png" alt="">
+            <img onclick="amrContent()" class="flag" id="america" src="assets/amcFlag.png" alt="">
+            <img onclick="socialContent()" class="flag" id="social" src="assets/unrwa.jpeg" alt="">
+        </div>
+
+        <div class="contentDesc" id="contentDesc">
+            <p>Use the flags to learn more about me!</p>
+        </div>
+
+        <div class="borderBot">
+            <h1>-</h1>
+        </div>
+    </body>
+</html>
