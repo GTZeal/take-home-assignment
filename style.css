@@ -182,7 +182,7 @@ a {
 }
 
 .gallery {
-    border: 0.3vw solid;
+    border: 0.3vw rgb(10,31,67) solid;
     float: left;
     width: 15%;
     margin: 5px;
@@ -299,7 +299,7 @@ a {
     color: white;
     display: flex;
     justify-content: center;
-    border-radius: 3rem;
+    border-radius: 0.5rem;
 }
 
 .flagContainer {
