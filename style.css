@@ -187,6 +187,15 @@ a {
     width: 15%;
     margin: 5px;
     transition: transform 0.2s ease;
+
+    /* CSS ANIMATION */
+    animation-name: slideInBottom;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
 }
 
 .gallery:hover {
